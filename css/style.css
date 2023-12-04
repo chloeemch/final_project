@@ -81,7 +81,7 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
-  background-color: lightblue;
+  background-color: skyblue;
   z-index: 1;
 }
 
@@ -147,10 +147,10 @@ h1 {
   font-size: 20px;
 }
 #debut {
-  color:#00a3ad
+  color:#195e73;
 }
 #fearless {
-  color: #ddc477
+  color: #bb8f67
 }
 #speaknow {
   color: #883689
@@ -159,16 +159,16 @@ h1 {
   color: #ae1e49
 }
 #nineteen {
-  color: #789ac0
+  color: #5b86ae
 }
 #reputation {
   color: black
 }
 #lover {
-  color: #eaadd6
+  color: #f0649d
 }
 #folklore {
-  color: #7f7f7f
+  color: #353535
 }
 #evermore {
   color: #7f3c10
@@ -183,7 +183,7 @@ h1 {
   position: fixed;
   color: #fff;
   font-size: 24px;
-  background-color: #c9e8fd; /* Set background color for navigation buttons */
+  background-color: #8dcaf3; /* Set background color for navigation buttons */
   border-radius: 50%;
   padding: 10px;
   margin: 0 10px;
@@ -239,7 +239,7 @@ p {
   border-radius: 10%;
   margin: 20px 10px 20px 10px;
   padding: 15px;
-  color: white;
+  color: black;
 }
 .reptour {
   grid-area: fifth;
@@ -266,7 +266,7 @@ p {
   background-color: #eaadd6;
   margin: 20px 10px 20px 10px; 
   border-radius: 10%;
-  color: white;
+  color: black;
   padding: 15px;
 }
 .grid {
@@ -288,7 +288,6 @@ img:hover {
     background-position: 100% 100%;
   }
 }
-
 .concert {
   margin: 0;
   padding: 0;
@@ -313,7 +312,7 @@ img:hover {
   }
   .nav-list a {
     text-decoration: none;
-    color: lightblue;
+    color: darkblue;
     font-size: 18px;
     margin-right: 10px;
   }
@@ -412,10 +411,10 @@ img:hover {
     font-size: 20px;
   }
   #debut {
-    color:#00a3ad
+    color:#195e73;
   }
   #fearless {
-    color: #ddc477
+    color: #bb8f67
   }
   #speaknow {
     color: #883689
@@ -424,16 +423,16 @@ img:hover {
     color: #ae1e49
   }
   #nineteen {
-    color: #789ac0
+    color: #5b86ae
   }
   #reputation {
     color: black
   }
   #lover {
-    color: #eaadd6
+    color: #f0649d
   }
   #folklore {
-    color: #7f7f7f
+    color: #353535
   }
   #evermore {
     color: #7f3c10
@@ -448,7 +447,7 @@ img:hover {
     position: fixed;
     color: #fff;
     font-size: 24px;
-    background-color: #c9e8fd; /* Set background color for navigation buttons */
+    background-color: #8dcaf3; /* Set background color for navigation buttons */
     border-radius: 50%;
     padding: 10px;
     margin: 0 10px;
@@ -508,7 +507,7 @@ img:hover {
     border-radius: 10%;
     margin: 20px 10px 20px 10px;
     padding: 15px;
-    color: white;
+    color: black;
   }
   .reptour {
     grid-area: fifth;
@@ -535,7 +534,7 @@ img:hover {
     background-color: #eaadd6;
     margin: 20px 10px 20px 10px; 
     border-radius: 10%;
-    color: white;
+    color: black;
     padding: 15px;
   }
   .grid {
@@ -583,7 +582,7 @@ img:hover {
   }
   .nav-list a {
     text-decoration: none;
-    color: lightblue;
+    color: darkblue;
     font-size: 18px;
     margin-right: 10px;
   }
@@ -682,10 +681,10 @@ img:hover {
     font-size: 20px;
   }
   #debut {
-    color:#00a3ad
+    color:#195e73;
   }
   #fearless {
-    color: #ddc477
+    color: #bb8f67
   }
   #speaknow {
     color: #883689
@@ -694,16 +693,16 @@ img:hover {
     color: #ae1e49
   }
   #nineteen {
-    color: #789ac0
+    color: #5b86ae
   }
   #reputation {
     color: black
   }
   #lover {
-    color: #eaadd6
+    color: #f0649d
   }
   #folklore {
-    color: #7f7f7f
+    color: #353535
   }
   #evermore {
     color: #7f3c10
@@ -718,7 +717,7 @@ img:hover {
     position: fixed;
     color: #fff;
     font-size: 24px;
-    background-color: #c9e8fd; /* Set background color for navigation buttons */
+    background-color: #8dcaf3; /* Set background color for navigation buttons */
     border-radius: 50%;
     padding: 10px;
     margin: 0 10px;
@@ -778,7 +777,7 @@ img:hover {
     border-radius: 10%;
     margin: 20px 10px 20px 10px;
     padding: 15px;
-    color: white;
+    color: black;
   }
   .reptour {
     grid-area: fifth;
@@ -805,7 +804,7 @@ img:hover {
     background-color: #eaadd6;
     margin: 20px 10px 20px 10px; 
     border-radius: 10%;
-    color: white;
+    color: black;
     padding: 15px;
   }
   .grid {
