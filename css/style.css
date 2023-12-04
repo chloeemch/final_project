@@ -1,0 +1,842 @@
+#skip {
+  position: absolute;
+  left: -500px;
+  color: black;
+}
+
+#skip:focus {
+  left: 100px;
+  text-transform: uppercase;
+  color: black;
+}
+
+/* Common styles for both mobile and larger screens */
+body {
+  margin: 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.index {
+  background-image: url(../images/bg.gif);
+  background-position: center top;
+}
+@media (prefers-reduced-motion) {
+  h1 {
+      animation: none;
+      color: white
+  }
+  .index {
+    animation: none;
+    background-image: url(../images/background.avif);
+  }
+}
+.bejeweled {
+  position: fixed;
+  bottom: 0;
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+
+}
+.hometitle {
+  color: #883689;
+  font-weight: bold;
+  background-color: #ffe9ec;
+}
+
+/* Style the navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: plum;
+}
+
+/* Style the hamburger icon */
+.menu-icon {
+  display: block; /* Show by default on all screens */
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+}
+
+/* Style the navigation list */
+.nav-list {
+  list-style: none;
+  display: none;
+  margin: 0;
+}
+
+.nav-list.show {
+  display: flex; /* Show when the menu is toggled */
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  background-color: lightblue;
+  z-index: 1;
+}
+
+.nav-list li {
+  margin: 10px 0; /* Adjust margin between items */
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+/* Add your existing styles and the following styles for Swiper */
+/* Reset some default margin and padding */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FAF9F6;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+  color: #883689
+}
+
+/* Apply a box-sizing border-box to all elements */
+* {
+  box-sizing: border-box;
+}
+/* Style the Swiper container */
+.swiper-container {
+  width: 50%; /* Adjust the width as needed */
+  max-width: 600px; /* Set a maximum width if desired */
+  margin: 50px auto; /* Center the container horizontally and add some top margin */
+}
+
+/* Style individual slides */
+.swiper-slide {
+  position: relative;
+  overflow: hidden;
+  margin: 0px 25px; 
+}
+
+/* Style the album covers within slides */
+.album-cover {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; /* Add border-radius for rounded corners */
+}
+
+.album-title {
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.album-review {
+  text-align: center;
+  font-size: 20px;
+}
+#debut {
+  color:#00a3ad
+}
+#fearless {
+  color: #ddc477
+}
+#speaknow {
+  color: #883689
+}
+#red {
+  color: #ae1e49
+}
+#nineteen {
+  color: #789ac0
+}
+#reputation {
+  color: black
+}
+#lover {
+  color: #eaadd6
+}
+#folklore {
+  color: #7f7f7f
+}
+#evermore {
+  color: #7f3c10
+}
+#midnights {
+  color: #4e4466
+}
+
+/* Style the Swiper navigation buttons */
+.swiper-button-prev,
+.swiper-button-next {
+  position: fixed;
+  color: #fff;
+  font-size: 24px;
+  background-color: #c9e8fd; /* Set background color for navigation buttons */
+  border-radius: 50%;
+  padding: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+/* Change color of navigation buttons on hover */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #555;
+}
+
+button {
+  display: flex;
+  border: 1px solid #883689;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #883689;
+  color: white;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+p {
+  color: #883689;
+  text-align: center;
+  font-size: 18px;
+}
+.sntour {
+  grid-area: first;
+  margin: 20px 10px 20px 10px;
+  border-radius: 50%;
+}
+.snwriting {
+  grid-area: second;
+  border:#883689 2px solid;
+  background-color: #883689;
+  margin: 20px 10px 20px 20px;
+  border-radius: 10%;
+  padding: 15px;
+  color: white;
+}
+.ninetour {
+  grid-area: third;
+  margin: 20px 10px 20px 20px;
+  border-radius: 50%;
+}
+.ninewriting {
+  grid-area: fourth;
+  border:#789ac0 2px solid;
+  background-color: #789ac0;
+  border-radius: 10%;
+  margin: 20px 10px 20px 10px;
+  padding: 15px;
+  color: white;
+}
+.reptour {
+  grid-area: fifth;
+  margin: 20px 10px 20px 10px;
+  border-radius: 50%;
+}
+.repwriting {
+  grid-area: sixth;
+  border:black 2px solid;
+  background-color: black;
+  border-radius: 10%;
+  margin: 20px 10px 20px 20px;
+  padding: 15px;
+  color: white
+}
+.erastour {
+  grid-area: seventh;
+  margin: 20px 10px 20px 20px;
+  border-radius: 50%;
+}
+.eraswriting {
+  grid-area: eigth;
+  border:#eaadd6 2px solid;
+  background-color: #eaadd6;
+  margin: 20px 10px 20px 10px; 
+  border-radius: 10%;
+  color: white;
+  padding: 15px;
+}
+.grid {
+  display: grid;
+  place-items: center;
+  grid-template-areas: 'first second' 'fourth third' 'fifth sixth' 'eigth seventh';
+  justify-content: center;
+  grid-gap: 5px;
+}
+img:hover {
+  transition: transform .2s ease;
+  transform: scale(1.03);
+}
+@keyframes sparkle {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.concert {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(45deg, #f06, #9f6) fixed;
+  background-size: 200% 200%;
+  animation: sparkle 8s linear infinite; /* Adjust the duration as needed */
+}
+
+/* Media query for tablet screens */
+@media screen and (min-width: 768px) {
+  .menu-icon {
+    display: none; /* Hide on larger screens */
+  }
+
+  .nav-list {
+    display: flex; /* Show by default on larger screens */
+  }
+
+  .nav-list li {
+    margin: 0 10px; /* Adjust margin between items on larger screens */
+  }
+  .nav-list a {
+    text-decoration: none;
+    color: lightblue;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  .nav-item:hover {
+    text-decoration: underline;
+  }
+  #home {
+    padding: 5px;
+    border: 2px white solid
+  }
+  #album {
+    padding: 5px;
+    border: 2px white solid
+  }
+  #concert {
+    padding: 5px;
+    border: 2px white solid
+  }
+
+  /* Add your existing styles and the following styles for Swiper */
+  /* Reset some default margin and padding */
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAF9F6;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    color: #644bd8
+  }
+  .index {
+    background-image: url(../images/bg.gif);
+    background-position: center top;
+  }
+  @media (prefers-reduced-motion) {
+    h1 {
+        animation: none;
+        color: white
+    }
+    .index {
+      animation: none;
+      background-image: url(../images/background.avif);
+    }
+  }
+  .bejeweled {
+    position: fixed;
+    bottom: 0;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+  
+  }
+  .hometitle {
+    color: #883689;
+    font-weight: bold;
+    background-color: #ffe9ec;
+  }
+
+  /* Apply a box-sizing border-box to all elements */
+  * {
+    box-sizing: border-box;
+  }
+  /* Style the Swiper container */
+  .swiper-container {
+    width: 50%; /* Adjust the width as needed */
+    max-width: 600px; /* Set a maximum width if desired */
+    margin: 50px auto; /* Center the container horizontally and add some top margin */
+  }
+
+  /* Style individual slides */
+  .swiper-slide {
+    position: relative;
+    overflow: hidden;
+    margin: 0px 25px; 
+  }
+
+  /* Style the album covers within slides */
+  .album-cover {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Add border-radius for rounded corners */
+  }
+
+  .album-title {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .album-review {
+    text-align: center;
+    font-size: 20px;
+  }
+  #debut {
+    color:#00a3ad
+  }
+  #fearless {
+    color: #ddc477
+  }
+  #speaknow {
+    color: #883689
+  }
+  #red {
+    color: #ae1e49
+  }
+  #nineteen {
+    color: #789ac0
+  }
+  #reputation {
+    color: black
+  }
+  #lover {
+    color: #eaadd6
+  }
+  #folklore {
+    color: #7f7f7f
+  }
+  #evermore {
+    color: #7f3c10
+  }
+  #midnights {
+    color: #4e4466
+  }
+
+  /* Style the Swiper navigation buttons */
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: fixed;
+    color: #fff;
+    font-size: 24px;
+    background-color: #c9e8fd; /* Set background color for navigation buttons */
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+  /* Change color of navigation buttons on hover */
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: #555;
+  }
+
+  button {
+    display: flex;
+    border: 1px solid #883689;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #883689;
+    color: white;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: white
+  }
+  p {
+    color: #883689;
+    text-align: center;
+    font-size: 18px;
+  }
+  .sntour {
+    grid-area: first;
+    margin: 20px 10px 20px 10px;
+    border-radius: 50%;
+  }
+  .snwriting {
+    grid-area: second;
+    border:#883689 2px solid;
+    background-color: #883689;
+    margin: 20px 10px 20px 20px;
+    border-radius: 10%;
+    padding: 15px;
+    color: white;
+  }
+  .ninetour {
+    grid-area: third;
+    margin: 20px 10px 20px 20px;
+    border-radius: 50%;
+  }
+  .ninewriting {
+    grid-area: fourth;
+    border:#789ac0 2px solid;
+    background-color: #789ac0;
+    border-radius: 10%;
+    margin: 20px 10px 20px 10px;
+    padding: 15px;
+    color: white;
+  }
+  .reptour {
+    grid-area: fifth;
+    margin: 20px 10px 20px 10px;
+    border-radius: 50%;
+  }
+  .repwriting {
+    grid-area: sixth;
+    border:black 2px solid;
+    background-color: black;
+    border-radius: 10%;
+    margin: 20px 10px 20px 20px;
+    padding: 15px;
+    color: white
+  }
+  .erastour {
+    grid-area: seventh;
+    margin: 20px 10px 20px 20px;
+    border-radius: 50%;
+  }
+  .eraswriting {
+    grid-area: eigth;
+    border:#eaadd6 2px solid;
+    background-color: #eaadd6;
+    margin: 20px 10px 20px 10px; 
+    border-radius: 10%;
+    color: white;
+    padding: 15px;
+  }
+  .grid {
+    display: grid;
+    place-items: center;
+    grid-template-areas: 'first second' 'fourth third' 'fifth sixth' 'eigth seventh';
+    justify-content: center;
+    grid-gap: 5px;
+  }
+  img:hover {
+    transition: transform .2s ease;
+    transform: scale(1.03);
+  }
+  @keyframes sparkle {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+
+  .concert {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(45deg, #f06, #9f6) fixed;
+    background-size: 200% 200%;
+    animation: sparkle 8s linear infinite; /* Adjust the duration as needed */
+  }
+}
+
+/* Media query for desktop screens */
+@media screen and (min-width: 1025px) {
+  .menu-icon {
+    display: none; /* Hide on larger screens */
+  }
+
+  .nav-list {
+    display: flex; /* Show by default on larger screens */
+  }
+
+  .nav-list li {
+    margin: 0 10px; /* Adjust margin between items on larger screens */
+  }
+  .nav-list a {
+    text-decoration: none;
+    color: lightblue;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  .nav-item:hover {
+    text-decoration: underline;
+  }
+  #home {
+    padding: 5px;
+    border: 2px white solid
+  }
+  #album {
+    padding: 5px;
+    border: 2px white solid
+  }
+  #concert {
+    padding: 5px;
+    border: 2px white solid
+  }
+
+  /* Add your existing styles and the following styles for Swiper */
+  /* Reset some default margin and padding */
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAF9F6;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    color: #644bd8
+  }
+  .index {
+    background-image: url(../images/bg.gif);
+    background-position: center top;
+  }
+  @media (prefers-reduced-motion) {
+    h1 {
+        animation: none;
+        color: white
+    }
+    .index {
+      animation: none;
+      background-image: url(../images/background.avif);
+    }
+}
+  .bejeweled {
+    position: fixed;
+    bottom: 0;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+  
+  }
+  .hometitle {
+    color: #883689;
+    font-weight: bold;
+    background-color: #ffe9ec;
+  }
+
+  /* Apply a box-sizing border-box to all elements */
+  * {
+    box-sizing: border-box;
+  }
+  /* Style the Swiper container */
+  .swiper-container {
+    width: 50%; /* Adjust the width as needed */
+    max-width: 600px; /* Set a maximum width if desired */
+    margin: 50px auto; /* Center the container horizontally and add some top margin */
+  }
+
+  /* Style individual slides */
+  .swiper-slide {
+    position: relative;
+    overflow: hidden;
+    margin: 0px 25px; 
+  }
+
+  /* Style the album covers within slides */
+  .album-cover {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Add border-radius for rounded corners */
+  }
+
+  .album-title {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .album-review {
+    text-align: center;
+    font-size: 20px;
+  }
+  #debut {
+    color:#00a3ad
+  }
+  #fearless {
+    color: #ddc477
+  }
+  #speaknow {
+    color: #883689
+  }
+  #red {
+    color: #ae1e49
+  }
+  #nineteen {
+    color: #789ac0
+  }
+  #reputation {
+    color: black
+  }
+  #lover {
+    color: #eaadd6
+  }
+  #folklore {
+    color: #7f7f7f
+  }
+  #evermore {
+    color: #7f3c10
+  }
+  #midnights {
+    color: #4e4466
+  }
+
+  /* Style the Swiper navigation buttons */
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: fixed;
+    color: #fff;
+    font-size: 24px;
+    background-color: #c9e8fd; /* Set background color for navigation buttons */
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+  /* Change color of navigation buttons on hover */
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: #555;
+  }
+
+  button {
+    display: flex;
+    border: 1px solid #883689;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #883689;
+    color: white;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: white
+  }
+  p {
+    color: #883689;
+    text-align: center;
+    font-size: 18px;
+  }
+  .sntour {
+    grid-area: first;
+    margin: 20px 10px 20px 10px;
+    border-radius: 50%;
+  }
+  .snwriting {
+    grid-area: second;
+    border:#883689 2px solid;
+    background-color: #883689;
+    margin: 20px 10px 20px 20px;
+    border-radius: 10%;
+    padding: 15px;
+    color: white;
+  }
+  .ninetour {
+    grid-area: third;
+    margin: 20px 10px 20px 20px;
+    border-radius: 50%;
+  }
+  .ninewriting {
+    grid-area: fourth;
+    border:#789ac0 2px solid;
+    background-color: #789ac0;
+    border-radius: 10%;
+    margin: 20px 10px 20px 10px;
+    padding: 15px;
+    color: white;
+  }
+  .reptour {
+    grid-area: fifth;
+    margin: 20px 10px 20px 10px;
+    border-radius: 50%;
+  }
+  .repwriting {
+    grid-area: sixth;
+    border:black 2px solid;
+    background-color: black;
+    border-radius: 10%;
+    margin: 20px 10px 20px 20px;
+    padding: 15px;
+    color: white
+  }
+  .erastour {
+    grid-area: seventh;
+    margin: 20px 10px 20px 20px;
+    border-radius: 50%;
+  }
+  .eraswriting {
+    grid-area: eigth;
+    border:#eaadd6 2px solid;
+    background-color: #eaadd6;
+    margin: 20px 10px 20px 10px; 
+    border-radius: 10%;
+    color: white;
+    padding: 15px;
+  }
+  .grid {
+    display: grid;
+    place-items: center;
+    grid-template-areas: 'first second' 'fourth third' 'fifth sixth' 'eigth seventh';
+    justify-content: center;
+    grid-gap: 5px;
+  }
+  img:hover {
+    transition: transform .2s ease;
+    transform: scale(1.03);
+  }
+  @keyframes sparkle {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+
+  .concert {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(45deg, #f06, #9f6) fixed;
+    background-size: 200% 200%;
+    animation: sparkle 8s linear infinite; /* Adjust the duration as needed */
+  }
+
+}
+
+
